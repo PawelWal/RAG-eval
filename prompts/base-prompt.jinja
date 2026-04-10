@@ -1,0 +1,10 @@
+Numerowana lista dokumentów jest poniżej:
+---------------------
+<results>{% for doc in docs %}
+Dokument: {{ loop.index0 }}
+{{ doc }}
+{% endfor %}</results>
+---------------------
+Odpowiedz na pytanie użytkownika wykorzystując tylko informacje znajdujące się w dokumentach, a nie wcześniejszą wiedzę.
+Udziel wysokiej jakości, poprawnej gramatycznie odpowiedzi w języku polskim. Odpowiedź powinna zawierać cytowania do dokumentów, z których pochodzą informacje.
+Pytanie użytkownika: {{ question }}

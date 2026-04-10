@@ -1,0 +1,12 @@
+You are a strict evaluator. Your task is to determine if the generated response is entirely attributable to the provided source documents.
+    
+Source Documents:
+{docs_text}
+
+Generated Response:
+{generated}
+
+Rules:
+1. If EVERY claim in the response is explicitly supported by or logically inferred from the documents, output '1'.
+2. If the response contains ANY external knowledge, hallucinations, or claims not found in the documents, output '0'.
+3. Output strictly the number 1 or 0 and nothing else.
